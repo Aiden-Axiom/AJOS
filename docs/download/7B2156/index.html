@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJOS – The Future of Operating Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5599ff;
+      --primary-hover: #3377dd;
+      --background: #0b0e1a;
+      --foreground: #ffffff;
+      --card: rgba(255, 255, 255, 0.03);
+      --nav: rgba(15, 18, 28, 0.9);
+      --border: rgba(255, 255, 255, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--foreground);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--nav);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      opacity: 1;
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+
+    button, a {
+        user-select: none;
+    }
+
+    .download-btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background: var(--primary-hover);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: transform 0.3s ease, border 0.3s;
+      backdrop-filter: blur(12px);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+      box-shadow: 0 0 1em var(--primary);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.4;
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">AJOS</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Download</a></li>
+      <li><a href="#">Docs</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Thank you.</h1>
+    <p>Thank you, for installing AJOS, we appreciate your gratitude. If your download does not start, press this button.</p>
+    <a href="/ajos-1-new-isobuild.zip" class="download-btn" download>Download Manually</a>
+  </section>
+
+</body>
+</html>
